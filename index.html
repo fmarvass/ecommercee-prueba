@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tienda en línea</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="background">
+    <img src="bob_esponja_background.jpg" alt="Fondo de Bob Esponja">
+  </div>
+  
+  <div class="container">
+    <h1>Tienda en línea</h1>
+
+    <div class="products">
+      <div class="product" onmouseover="mostrarDescripcion(1)" onmouseout="ocultarDescripcion(1)">
+        <img src="producto1.jpg" alt="Producto 1">
+        <h2>Producto 1</h2>
+        <p>Precio: $10</p>
+        <div id="descripcion1" class="descripcion-hidden">
+          <h3>Descripción del Producto 1</h3>
+          <p>Aquí va la descripción detallada del Producto 1.</p>
+        </div>
+        <div class="quantity">
+          <button class="minus" onclick="restarCantidad(1)">-</button>
+          <input type="number" id="cantidad1" value="0">
+          <button class="plus" onclick="sumarCantidad(1)">+</button>
+        </div>
+        <button onclick="agregarAlCarrito(1)">Agregar al carrito</button>
+      </div>
+
+      <div class="product" onmouseover="mostrarDescripcion(2)" onmouseout="ocultarDescripcion(2)">
+        <img src="producto2.jpg" alt="Producto 2">
+        <h2>Producto 2</h2>
+        <p>Precio: $15</p>
+        <div id="descripcion2" class="descripcion-hidden">
+          <h3>Descripción del Producto 2</h3>
+          <p>Aquí va la descripción detallada del Producto 2.</p>
+        </div>
+        <div class="quantity">
+          <button class="minus" onclick="restarCantidad(2)">-</button>
+          <input type="number" id="cantidad2" value="0">
+          <button class="plus" onclick="sumarCantidad(2)">+</button>
+        </div>
+        <button onclick="agregarAlCarrito(2)">Agregar al carrito</button>
+      </div>
+
+      <!-- Agrega más productos aquí -->
+      <div class="product" onmouseover="mostrarDescripcion(3)" onmouseout="ocultarDescripcion(3)">
+        <img src="producto3.jpg" alt="Producto 3">
+        <h2>Producto 3</h2>
+        <p>Precio: $15</p>
+        <div id="descripcion3" class="descripcion-hidden">
+          <h3>Descripción del Producto 3</h3>
+          <p>Aquí va la descripción detallada del Producto 3.</p>
+        </div>
+        <div class="quantity">
+          <button class="minus" onclick="restarCantidad(3)">-</button>
+          <input type="number" id="cantidad2" value="0">
+          <button class="plus" onclick="sumarCantidad(3)">+</button>
+        </div>
+        <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+      </div>
+
+      <div class="product" onmouseover="mostrarDescripcion(4)" onmouseout="ocultarDescripcion(4)">
+        <img src="producto4.jpg" alt="Producto 4">
+        <h2>Producto 4</h2>
+        <p>Precio: $15</p>
+        <div id="descripcion4" class="descripcion-hidden">
+          <h3>Descripción del Producto 4</h3>
+          <p>Aquí va la descripción detallada del Producto 4.</p>
+        </div>
+        <div class="quantity">
+          <button class="minus" onclick="restarCantidad(4)">-</button>
+          <input type="number" id="cantidad2" value="0">
+          <button class="plus" onclick="sumarCantidad(4)">+</button>
+        </div>
+        <button onclick="agregarAlCarrito(4)">Agregar al carrito</button>
+      </div>
+
+      <div class="product" onmouseover="mostrarDescripcion(5)" onmouseout="ocultarDescripcion(5)">
+        <img src="producto5.jpg" alt="Producto 5">
+        <h2>Producto 5</h2>
+        <p>Precio: $15</p>
+        <div id="descripcion5" class="descripcion-hidden">
+          <h3>Descripción del Producto 5</h3>
+          <p>Aquí va la descripción detallada del Producto 5.</p>
+        </div>
+        <div class="quantity">
+          <button class="minus" onclick="restarCantidad(5)">-</button>
+          <input type="number" id="cantidad2" value="0">
+          <button class="plus" onclick="sumarCantidad(5)">+</button>
+        </div>
+        <button onclick="agregarAlCarrito(5)">Agregar al carrito</button>
+      </div>
+
+      <div class="product" onmouseover="mostrarDescripcion(6)" onmouseout="ocultarDescripcion(6)">
+        <img src="producto6.jpg" alt="Producto 6">
+        <h2>Producto 6</h2>
+        <p>Precio: $15</p>
+        <div id="descripcion6" class="descripcion-hidden">
+          <h3>Descripción del Producto 6</h3>
+          <p>Aquí va la descripción detallada del Producto 6.</p>
+        </div>
+        <div class="quantity">
+          <button class="minus" onclick="restarCantidad(6)">-</button>
+          <input type="number" id="cantidad2" value="0">
+          <button class="plus" onclick="sumarCantidad(6)">+</button>
+        </div>
+        <button onclick="agregarAlCarrito(6)">Agregar al carrito</button>
+      </div>
+
+      <div class="product" onmouseover="mostrarDescripcion(7)" onmouseout="ocultarDescripcion(7)">
+        <img src="producto7.jpg" alt="Producto 7">
+        <h2>Producto 7</h2>
+        <p>Precio: $15</p>
+        <div id="descripcion7" class="descripcion-hidden">
+          <h3>Descripción del Producto 7</h3>
+          <p>Aquí va la descripción detallada del Producto 7.</p>
+        </div>
+        <div class="quantity">
+          <button class="minus" onclick="restarCantidad(7)">-</button>
+          <input type="number" id="cantidad2" value="0">
+          <button class="plus" onclick="sumarCantidad(7)">+</button>
+        </div>
+        <button onclick="agregarAlCarrito(7)">Agregar al carrito</button>
+      </div>
+
+      <div class="product" onmouseover="mostrarDescripcion(8)" onmouseout="ocultarDescripcion(8)">
+        <img src="producto8.jpg" alt="Producto 8">
+        <h2>Producto 8</h2>
+        <p>Precio: $15</p>
+        <div id="descripcion8" class="descripcion-hidden">
+          <h3>Descripción del Producto 8</h3>
+          <p>Aquí va la descripción detallada del Producto 8.</p>
+        </div>
+        <div class="quantity">
+          <button class="minus" onclick="restarCantidad(8)">-</button>
+          <input type="number" id="cantidad2" value="0">
+          <button class="plus" onclick="sumarCantidad(8)">+</button>
+        </div>
+        <button onclick="agregarAlCarrito(8)">Agregar al carrito</button>
+      </div>
+
+      <div class="product" onmouseover="mostrarDescripcion(9)" onmouseout="ocultarDescripcion(9)">
+        <img src="producto9.jpg" alt="Producto 9">
+        <h2>Producto 9</h2>
+        <p>Precio: $15</p>
+        <div id="descripcion9" class="descripcion-hidden">
+          <h3>Descripción del Producto 9</h3>
+          <p>Aquí va la descripción detallada del Producto 9.</p>
+        </div>
+        <div class="quantity">
+          <button class="minus" onclick="restarCantidad(9)">-</button>
+          <input type="number" id="cantidad2" value="0">
+          <button class="plus" onclick="sumarCantidad(9)">+</button>
+        </div>
+        <button onclick="agregarAlCarrito(9)">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div id="carrito" class="carrito-hidden">
+      <h2>Carrito de compras</h2>
+      <ul id="carrito-lista"></ul>
+      <p>Total: <span id="carrito-total">$0</span></p>
+      <button onclick="realizarPedido()">Realizar Pedido por WhatsApp</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
